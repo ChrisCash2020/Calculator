@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="box">
+      <input type="number" class="show-input" />
+      <div class="container">
+        <div data-clear class="btn clear">clear</div>
+        <div data-del class="btn del">del</div>
+      </div>
+      <div class="grid-num">
+        <button data-num class="num items">7</button>
+        <button data-num class="num items">8</button>
+        <button data-num class="num items">9</button>
+        <button data-operation style="font-weight: bolder" class="items">
+          ÷
+        </button>
+        <button data-num class="num items">4</button>
+        <button data-num class="num items">5</button>
+        <button data-num class="num items">6</button>
+        <button data-operation class="items">*</button>
+        <button data-num class="num items">1</button>
+        <button data-num class="num items">2</button>
+        <button data-num class="num items">3</button>
+        <button data-operation class="items">-</button>
+        <button data-operation class="num-items">.</button>
+        <button data-num class="num items">0</button>
+        <button data-operation data-num class="items">=</button>
+        <button data-operation data-num class="items">+</button>
+      </div>
+    </form>
+  </body>
+  <script src="./main.js"></script>
+</html>
