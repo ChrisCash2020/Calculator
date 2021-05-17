@@ -9,7 +9,7 @@
   </head>
   <body>
     <form class="box">
-      <input type="number" class="show-input" />
+      <input type="text" class="show-input" disabled />
       <div class="container">
         <div data-clear class="btn clear">clear</div>
         <div data-del class="btn del">del</div>
@@ -18,9 +18,7 @@
         <button data-num class="num items">7</button>
         <button data-num class="num items">8</button>
         <button data-num class="num items">9</button>
-        <button data-operation style="font-weight: bolder" class="items">
-          ÷
-        </button>
+        <button data-operation class="items bolder">/</button>
         <button data-num class="num items">4</button>
         <button data-num class="num items">5</button>
         <button data-num class="num items">6</button>
@@ -29,10 +27,10 @@
         <button data-num class="num items">2</button>
         <button data-num class="num items">3</button>
         <button data-operation class="items">-</button>
-        <button data-operation class="num-items">.</button>
+        <button data-num class="num-items bolder">.</button>
         <button data-num class="num items">0</button>
-        <button data-operation data-num class="items">=</button>
-        <button data-operation data-num class="items">+</button>
+        <button class="items">=</button>
+        <button data-operation class="items">+</button>
       </div>
     </form>
   </body>

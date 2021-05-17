@@ -21,7 +21,9 @@ body {
   width: 400px;
   border: 2px solid black;
 }
-
+.bolder {
+  font-weight: bolder;
+}
 .show-input {
   display: flex;
   width: 100%;
