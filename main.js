@@ -8,7 +8,10 @@ let array = [];
 clear.addEventListener('click', function (e) {
   e.preventDefault();
   display.value = '';
-  array = [];
+  while (array.length > 0) {
+    array.pop();
+  }
+  console.log(array);
 });
 del.addEventListener('click', function (e) {
   e.preventDefault();
@@ -25,10 +28,22 @@ number.forEach((element, index) => {
     display.value += element.textContent;
   });
 });
+let tempPoint = '.';
 point.addEventListener('click', function (e) {
   e.preventDefault();
-  display.value += point.textContent;
+  display.value += tempPoint;
   if (display.value.includes('.')) {
-    point.textContent = '';
+    tempPoint = '';
   }
+});
+
+operator.forEach((element) => {
+  element.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (display.value != '') {
+      array.push(parseInt(display.value));
+      display.value = '';
+    }
+    console.log(array);
+  });
 });
