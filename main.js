@@ -32,7 +32,6 @@ number.forEach((element, index) => {
     if (operationCounter != 0) {
       display.value = '';
       display.value += element.textContent;
-      // array.pop();
       operationCounter = 0;
     }
   });
@@ -59,9 +58,7 @@ let operation = (currentype, a, b) => {
     array.shift();
     array.shift();
     display.value = result;
-    // displayVal = displayVal;
     currentype = undefined;
-    // return displayVal;
   }
   if (currentype == '-') {
     result = a - b;
@@ -69,9 +66,7 @@ let operation = (currentype, a, b) => {
     array.shift();
     array.shift();
     display.value = result;
-    // displayVal = display.value;
     currentype = undefined;
-    // return displayVal;
   }
   if (currentype == '*') {
     result = a * b;
@@ -79,9 +74,7 @@ let operation = (currentype, a, b) => {
     array.shift();
     array.shift();
     display.value = result;
-    // displayVal = display.value;
     currentype = undefined;
-    // return displayVal;
   }
   if (currentype == '/') {
     result = a / b;
@@ -89,9 +82,7 @@ let operation = (currentype, a, b) => {
     array.shift();
     array.shift();
     display.value = result;
-    // displayVal = display.value;
     currentype = undefined;
-    // return displayVal;
   }
   console.log(currentype);
   return;
